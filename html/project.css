@@ -1,0 +1,72 @@
+/* body {
+  position: relative;
+  width: 1440px;
+  height: 1144px;
+
+  background: #000000;
+  position: absolute;
+  width: 1440px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+} */
+* {
+  font-family: "Marcellus SC", serif;
+}
+.navbar-brand {
+  font-family: Lobster;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 62px;
+  text-align: center;
+}
+#logo {
+  font-family: "Pacifico", cursive;
+}
+.nav-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21;
+  line-height: 20px;
+  position: center;
+}
+#home {
+  position: absolute;
+  /* width: 143px; */
+  height: 42px;
+  left: 568px;
+  /* top: 35px; */
+}
+#forums {
+  position: absolute;
+  /* width: 147px; */
+  height: 39px;
+  left: 646px;
+  /* top: 35px; */
+}
+#blogs {
+  position: absolute;
+  /* width: 147px; */
+  height: 39px;
+  left: 742px;
+  /* top: 35px; */
+}
+#category {
+  margin-inline-start: 27em;
+  /* top: 35px; */
+  height: 39px;
+}
+#drop {
+  margin-inline-start: 34.2em;
+}
+#login {
+  position: absolute;
+  /* width: 147px; */
+  /* height: 39px; */
+  left: 700px;
+}
+#signup {
+  position: absolute;
+  left: 750px;
+}
