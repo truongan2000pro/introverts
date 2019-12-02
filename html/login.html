@@ -3,7 +3,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="project.css" />
     <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese"
@@ -27,7 +26,6 @@
     <link rel="stylesheet" href="project.css" />
   </head>
   <body>
-    <!-- <i style="font-size: 100px; color: pink;" class="fab fa-facebook-f "></i> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a id="logo" class="navbar-brand" href="#">Introverts</a>
       <button
@@ -90,7 +88,7 @@
           </li>
 
           <li id="login" class="nav-item active">
-            <a id="signup" class="nav-link " href="./signup.html"
+            <a id="signup" class="nav-link active" href="./signup.html"
               >Sign Up <span class="sr-only">(current)</span></a
             >
           </li>
@@ -98,25 +96,48 @@
 
         <!-- <form class="form-inline my-2 my-lg-0"> -->
         <!-- <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button> -->
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button> -->
         <!-- </form> -->
       </div>
     </nav>
-    <div id="salogan">A web site for dreamer and people are introverted</div>
-    <!-- <div>
-      <span id="logo">Introverts</span>
-      <button id="home">Home</button>
-      <button id="blogs">Blogs</button>
-      <button id="forums">Forums</button>
-    </div> -->
-
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="center" id="mail"
+          >Email address</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <small id="emailHelp" class="form-text text-muted center"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="center">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" id="submit" class="btn btn-primary is-valid">
+        Login
+      </button>
+    </form>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

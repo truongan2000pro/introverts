@@ -32,34 +32,10 @@
   position: center;
 }
 #home {
-  position: absolute;
-  /* width: 143px; */
-  height: 42px;
-  left: 568px;
-  /* top: 35px; */
+  /* float: left; */
+  margin-left: 22.5rem;
 }
-#forums {
-  position: absolute;
-  /* width: 147px; */
-  height: 39px;
-  left: 646px;
-  /* top: 35px; */
-}
-#blogs {
-  position: absolute;
-  /* width: 147px; */
-  height: 39px;
-  left: 742px;
-  /* top: 35px; */
-}
-#category {
-  margin-inline-start: 27em;
-  /* top: 35px; */
-  height: 39px;
-}
-#drop {
-  margin-inline-start: 34.2em;
-}
+
 #login {
   position: absolute;
   /* width: 147px; */
@@ -69,4 +45,53 @@
 #signup {
   position: absolute;
   left: 750px;
+}
+#salogan {
+  width: 663px;
+  height: 120px;
+  left: 388px;
+  top: 186px;
+
+  font-family: Londrina Outline;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 50px; */
+  line-height: 59px;
+  text-align: center;
+}
+#fname {
+  margin-top: 4rem;
+}
+.name {
+  /* margin-top: 4rem; */
+  width: 20%;
+  margin-left: 40rem;
+}
+
+#exampleInputEmail1 {
+  /* margin-top: 8rem; */
+  margin-left: 40rem;
+  width: 20%;
+}
+#exampleInputPassword1 {
+  margin-left: 40rem;
+  width: 20%;
+}
+#submit {
+  margin-left: 40rem;
+}
+#exampleCheck1 {
+  margin-left: 39rem;
+}
+.form-check-label {
+  margin-left: 40rem;
+}
+.center {
+  margin-left: 40rem;
+}
+#exampleFormControlTextarea1 {
+  width: 60%;
+}
+#tilte {
+  width: 50%;
 }
