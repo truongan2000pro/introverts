@@ -42,6 +42,11 @@
   /* height: 39px; */
   left: 700px;
 }
+/* #fname {
+  position: absolute;
+
+  left: 750px;
+} */
 #signup {
   position: absolute;
   left: 750px;
@@ -59,39 +64,64 @@
   line-height: 59px;
   text-align: center;
 }
-#fname {
+.container {
   margin-top: 4rem;
 }
 .name {
   /* margin-top: 4rem; */
   width: 20%;
-  margin-left: 40rem;
+  margin-left: 30rem;
 }
 
 #exampleInputEmail1 {
   /* margin-top: 8rem; */
-  margin-left: 40rem;
+  margin-left: 30rem;
   width: 20%;
 }
 #exampleInputPassword1 {
-  margin-left: 40rem;
+  margin-left: 30rem;
   width: 20%;
 }
 #submit {
-  margin-left: 40rem;
+  margin-left: 30rem;
 }
 #exampleCheck1 {
-  margin-left: 39rem;
+  margin-left: 29rem;
 }
 .form-check-label {
-  margin-left: 40rem;
+  margin-left: 30rem;
 }
 .center {
-  margin-left: 40rem;
+  margin-left: 30rem;
 }
 #exampleFormControlTextarea1 {
   width: 60%;
 }
 #tilte {
   width: 50%;
+}
+#hold {
+  height: 7rem;
+}
+#topic {
+  position: absolute;
+  top: 10rem;
+  font-size: 29;
+  left: 200px;
+}
+#rate {
+  position: absolute;
+  top: 10rem;
+  font-size: 29;
+  left: 700px;
+}
+#views {
+  position: absolute;
+  top: 10rem;
+  font-size: 29;
+  left: 890px;
+}
+#signup1 {
+  position: absolute;
+  left: 750px;
 }

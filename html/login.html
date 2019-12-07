@@ -107,37 +107,43 @@
         <!-- </form> -->
       </div>
     </nav>
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1" class="center" id="mail"
-          >Email address</label
-        >
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-        />
-        <small id="emailHelp" class="form-text text-muted center"
-          >We'll never share your email with anyone else.</small
-        >
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1" class="center">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-        />
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" id="submit" class="btn btn-primary is-valid">
-        Login
-      </button>
-    </form>
+    <div class="container">
+        <div class="row">
+            <form>
+       
+              </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="center" id="mail"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <small id="emailHelp" class="form-text text-muted center"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="center">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" id="submit" class="btn btn-primary is-valid">
+            Login
+          </button>
+        </form> 
+        </div>
+   
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -157,6 +163,26 @@
       src="https://kit.fontawesome.com/f38de2a0a5.js"
       crossorigin="anonymous"
     ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC4f03enPmh4DytsdL_uQWJObKQBOJERXA",
+    authDomain: "introverts-5a209.firebaseapp.com",
+    databaseURL: "https://introverts-5a209.firebaseio.com",
+    projectId: "introverts-5a209",
+    storageBucket: "introverts-5a209.appspot.com",
+    messagingSenderId: "90987650652",
+    appId: "1:90987650652:web:16ce8d7b3cc8ea42fe5099"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
     <script src="project.js"></script>
     <script src="button.js"></script>
   </body>
