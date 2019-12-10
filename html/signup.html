@@ -83,17 +83,20 @@
               <a class="dropdown-item" href="#">Other Problem</a>
             </div>
           </li>
-          <li id="login" class="nav-item active">
-            <a id="login" class="nav-link" href="login.html"
-              >Log in <span class="sr-only">(current)</span></a
-            >
-          </li>
+          <span id="inout">
 
-          <li id="login" class="nav-item active">
-            <a id="signup" class="nav-link active" href="#"
-              >Sign Up <span class="sr-only">(current)</span></a
-            >
-          </li>
+            <li id="login" class="nav-item active">
+                       <a id="login" class="nav-link" href="login.html"
+                         >Log in <span class="sr-only">(current)</span></a
+                       >
+                     </li>
+           
+                     <li id="signup" class="nav-item active">
+                       <a id="signup" class="nav-link active" href="./signup.html"
+                         >Sign Up <span class="sr-only">(current)</span></a
+                       >
+                     </li>
+                     </span>
         </ul>
 
         <!-- <form class="form-inline my-2 my-lg-0"> -->
@@ -116,55 +119,76 @@
       <button id="blogs">Blogs</button>
       <button id="forums">Forums</button>
     </div> -->
-    <div class="container">
-          <form>
-              <div class="form-group">
-                <label for="exampleInputPassword1" id="fname" class="center"
-                  >First name</label
-                >
-                <input type="text" class="form-control name" />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1" class="center">Last name</label>
-                <input type="text" class="form-control name" id="lname" />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1" class="center" id="mail"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <small id="emailHelp" class="form-text text-muted center"
-                  >We'll never share your email with anyone else.</small
-                >
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1" class="center">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1"
-                  >i agree to all terms and conditions</label
-                >
-              </div>
-              <button type="submit" id="signup1" class="btn btn-primary is-valid">
-                sign up
-              </button>
-            </form>
+   
+    <div class="container"> 
 
-
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <form id="all">
+                <div class="form-group">
+                  <label for="exampleInputPassword1" id="fname" class="center"
+                    >First name</label
+                  >
+                 
+                  <input type="text" id="fnameip" class="form-control name" />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1" id="lname" class="center">Last name</label>
+                 
+                  <input type="text" class="form-control name" id="lnameip" />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1" class="center" id="mail"
+                    >Email address</label
+                  >
+                 
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <small id="emailHelp" class="form-text text-muted center"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1" class="center">Password</label> 
+                 
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >i agree to all terms and conditions</label
+                  >
+                </div>
+  
+                <button type="button" id="signup1" class="btn btn-primary is-valid">
+                  sign up
+                </button> 
+               
+              </form>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="alert alert-danger hidden" id="span1" role="alert">
+            </div>
+        </div>
+        <div class="col-2"></div>
       </div>
     </div>
-    
+
+    </div>
+  
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
 
@@ -172,6 +196,7 @@
    https://firebase.google.com/docs/web/setup#available-libraries -->
 
   <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
 
 <script>
   // Your web app's Firebase configuration

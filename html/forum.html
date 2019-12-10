@@ -3,38 +3,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+   <title>Document</title>
+   <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="project.css">
   </head>
   <body>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="project.css" />
-        <title>Document</title>
-        <link
-          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap&subset=latin-ext"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
-          rel="stylesheet"
-        />
-
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="project.css" />
-      </head>
-      <body>
         <!-- <i style="font-size: 100px; color: pink;" class="fab fa-facebook-f "></i> -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a id="logo" class="navbar-brand" href="#">Introverts</a>
@@ -58,7 +49,7 @@
                 >
               </li>
               <li class="nav-item active">
-                <a id="forums" class="nav-link" href="#">Forums</a>
+                <a id="forums" class="nav-link" href="forum.html">Forums</a>
               </li>
               <li class="nav-item active">
                 <a id="blogs" class="nav-link" href="#"
@@ -91,17 +82,20 @@
                   <a class="dropdown-item" href="#">Other Problem</a>
                 </div>
               </li>
-              <li id="login" class="nav-item active">
-                <a id="login" class="nav-link" href="login.html"
-                  >Log in <span class="sr-only">(current)</span></a
-                >
-              </li>
+              <span id="inout">
 
-              <li id="login" class="nav-item active">
-                <a id="signup" class="nav-link " href="./signup.html"
-                  >Sign Up <span class="sr-only">(current)</span></a
-                >
-              </li>
+                <li id="login" class="nav-item active">
+                           <a id="login" class="nav-link" href="login.html"
+                             >Log in <span class="sr-only">(current)</span></a
+                           >
+                         </li>
+               
+                         <li id="signup" class="nav-item active">
+                           <a id="signup" class="nav-link active" href="./signup.html"
+                             >Sign Up <span class="sr-only">(current)</span></a
+                           >
+                         </li>
+                         </span>
             </ul>
 
             <!-- <form class="form-inline my-2 my-lg-0"> -->
@@ -126,15 +120,50 @@
                     <button id="blogs">Blogs</button>
                     <button id="forums">Forums</button>
                   </div> -->
-        <a id="" class="nav-link" href="newpost.html"
-          >New post <span class="sr-only">(current)</span></a
-        >
-        <div id="hold">
-          <span id="topic">Topic</span>
-          <span id="rate">Rating</span>
-          <span id="views">Views</span>
-        </div>
+                  <div class="container">
 
+                    <div class="row">
+                        <div class="col-3">
+                            <a id="newpost1" class="nav-link newpost1" href="newpost.html"
+                            >New post <span class="sr-only">(current)</span></a
+                          >
+                        </div>
+                        <div class="col-6">
+                        <div id="hold">
+                          <span id="topic">Topic</span>
+                          <span id="rate">Rating</span>
+                          <span id="views">Views</span>
+                        </div></div>
+                        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-6" id="titleshow"></div>     
+        <div class="col-3"></div>                   
+                  </div>
+
+        
+
+                      <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+                      <!-- TODO: Add SDKs for Firebase products that you want to use
+                     https://firebase.google.com/docs/web/setup#available-libraries -->
+                  
+                      <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+                      <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+                  
+                      <script>
+                        // Your web app's Firebase configuration
+                        var firebaseConfig = {
+                          apiKey: "AIzaSyC4f03enPmh4DytsdL_uQWJObKQBOJERXA",
+                          authDomain: "introverts-5a209.firebaseapp.com",
+                          databaseURL: "https://introverts-5a209.firebaseio.com",
+                          projectId: "introverts-5a209",
+                          storageBucket: "introverts-5a209.appspot.com",
+                          messagingSenderId: "90987650652",
+                          appId: "1:90987650652:web:16ce8d7b3cc8ea42fe5099"
+                        };
+                        // Initialize Firebase
+                        firebase.initializeApp(firebaseConfig);
+                      </script>
         <script
           src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
           integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -156,7 +185,6 @@
         ></script>
         <script src="project.js"></script>
         <script src="button.js"></script>
-      </body>
-    </html>
+        <script src="forum.js"></script>
   </body>
 </html>

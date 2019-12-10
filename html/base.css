@@ -1,99 +1,62 @@
-/* body {
-  position: relative;
-  width: 1440px;
-  height: 1144px;
-
-  background: #000000;
-  position: absolute;
-  width: 1440px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-} */
 * {
-  font-family: "Marcellus SC", serif;
-}
-.navbar-brand {
-  font-family: Lobster;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  line-height: 62px;
-  text-align: center;
-}
-#logo {
-  font-family: "Pacifico", cursive;
-}
-.nav-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 21;
-  line-height: 20px;
-  position: center;
-}
-#home {
-  /* float: left; */
-  margin-left: 22.5rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-#login {
-  position: absolute;
-  /* width: 147px; */
-  /* height: 39px; */
-  left: 700px;
+body {
+  font-family: "Raleway", sans-serif;
 }
-/* #fname {
-  position: absolute;
 
-  left: 750px;
-} */
-#signup {
-  position: absolute;
-  left: 725px;
-}
-#salogan {
-  width: 663px;
-  height: 120px;
-  left: 388px;
-  top: 186px;
-
-  font-family: Londrina Outline;
-  font-style: normal;
-  font-weight: normal;
-  /* font-size: 50px; */
-  line-height: 59px;
-  text-align: center;
-}
-.hidden {
-  visibility: hidden;
-}
-#InputEmail {
+.navbar-default {
+  position: relative;
   width: 100%;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  z-index: 34567;
 }
-#InputPassword {
-  width: 100%;
+
+.navbar-logo {
+  font-size: 2rem;
+  font: 400 40px/1.5 "Pacifico", Helvetica, sans-serif !important;
+  color: #2b2b2b;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1), 7px 7px 0px rgba(0, 0, 0, 0.05);
 }
-#fnameip {
-  width: 40%;
+
+.navbar-toggle-group {
+  font-size: 1.2rem;
+  transform: translate(-300px, 10px);
+  /* font-style: italic; */
+  opacity: 0.7;
 }
-#lnameip {
-  width: 40%;
+
+.navbar-toggle_home,
+.navbar-toggle_forums,
+.navbar-toggle_blogs,
+.navbar-toggle_category {
+  margin: 0.2rem !important;
 }
-#all {
+
+.navbar-account {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  transform: translateX(10px);
 }
-#login1 {
-  position: absolute;
-  /* width: 147px; */
-  /* height: 39px; */
-  left: 700px;
-}
-.newpost1 {
-  visibility: hidden;
-}
-#all {
-  position: absolute;
-  left: 10rem;
-  top: 4rem;
+
+.navbar-account-login,
+.navbar-account-signup {
+  margin: 0.2rem;
+  opacity: 0.5;
+  border: 1px solid black;
+  border-radius: 18px;
+  padding: 5px;
+  text-align: center;
+  height: 2rem;
+  width: 4rem;
 }
 
 .dropdown.navbar-toggle_category {
@@ -143,8 +106,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: calc(100% - 4.5rem - 20px);
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -157,8 +120,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: calc(100% - 4.5rem - 20px);
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -171,8 +134,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: calc(100% - 4.5rem - 20px);
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -218,36 +181,4 @@
 .title-para {
   font-size: 40px;
   margin-bottom: 20px;
-}
-#topic {
-  /* position: absolute; */
-  font-size: 1.6rem;
-  /* left: 7rem; */
-}
-#rate {
-  position: absolute;
-  font-size: 1.6rem;
-  left: 35rem;
-}
-#views {
-  position: absolute;
-  font-size: 1.6em;
-  left: 24rem;
-}
-#titleshow {
-  font-size: 1.2rem;
-}
-#divOfNewPost {
-  top: 4rem;
-  left: 2rem;
-}
-#tilte {
-  width: 70%;
-}
-#mood {
-  width: 90%;
-}
-#newpost1 {
-  color: red;
-  font-size: 2rem;
 }
